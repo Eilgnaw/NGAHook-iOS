@@ -1,0 +1,745 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		753BC7E2215CAA8400517BF9 /* MDConfig.plist in Resources */ = {isa = PBXBuildFile; fileRef = 753BC7E1215CAA8400517BF9 /* MDConfig.plist */; };
+		753BC7EC215CAA8400517BF9 /* libNGAHookDylib.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 753BC7EB215CAA8400517BF9 /* libNGAHookDylib.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		753BC7F1215CAA8500517BF9 /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753BC7F0215CAA8500517BF9 /* JavaScriptCore.framework */; };
+		753BC7F3215CAA8500517BF9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753BC7F2215CAA8500517BF9 /* Foundation.framework */; };
+		753BC7F5215CAA8500517BF9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 753BC7F4215CAA8500517BF9 /* UIKit.framework */; };
+		753BC7FA215CAA8500517BF9 /* NGAHookDylib.mm in Sources */ = {isa = PBXBuildFile; fileRef = 753BC7F9215CAA8500517BF9 /* NGAHookDylib.mm */; };
+		753BC7FD215CAA8500517BF9 /* MDConfigManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC7FC215CAA8500517BF9 /* MDConfigManager.h */; };
+		753BC7FF215CAA8500517BF9 /* MDConfigManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC7FE215CAA8500517BF9 /* MDConfigManager.m */; };
+		753BC801215CAA8500517BF9 /* MDCycriptManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC800215CAA8500517BF9 /* MDCycriptManager.h */; };
+		753BC803215CAA8500517BF9 /* MDCycriptManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC802215CAA8500517BF9 /* MDCycriptManager.m */; };
+		753BC805215CAA8500517BF9 /* MDMethodTrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC804215CAA8500517BF9 /* MDMethodTrace.h */; };
+		753BC807215CAA8500517BF9 /* MDMethodTrace.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC806215CAA8500517BF9 /* MDMethodTrace.m */; };
+		753BC809215CAA8500517BF9 /* ANYMethodLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC808215CAA8500517BF9 /* ANYMethodLog.h */; };
+		753BC80B215CAA8500517BF9 /* ANYMethodLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC80A215CAA8500517BF9 /* ANYMethodLog.m */; };
+		753BC80E215CAA8500517BF9 /* LLDBTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC80D215CAA8500517BF9 /* LLDBTools.h */; };
+		753BC810215CAA8500517BF9 /* LLDBTools.mm in Sources */ = {isa = PBXBuildFile; fileRef = 753BC80F215CAA8500517BF9 /* LLDBTools.mm */; };
+		753BC815215CAA8500517BF9 /* AntiAntiDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC814215CAA8500517BF9 /* AntiAntiDebug.m */; };
+		753BC818215CAA8500517BF9 /* fishhook.c in Sources */ = {isa = PBXBuildFile; fileRef = 753BC817215CAA8500517BF9 /* fishhook.c */; };
+		753BC81A215CAA8500517BF9 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC819215CAA8500517BF9 /* fishhook.h */; };
+		753BC81C215CAA8500517BF9 /* NGAHookDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC81B215CAA8500517BF9 /* NGAHookDylib.h */; };
+		753BC81E215CAA8500517BF9 /* NGAHookDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC81D215CAA8500517BF9 /* NGAHookDylib.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		753BC7ED215CAA8400517BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 753BC7CF215CAA8400517BF9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 753BC7EA215CAA8400517BF9;
+			remoteInfo = NGAHookDylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		753BC7D7215CAA8400517BF9 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				753BC7EC215CAA8400517BF9 /* libNGAHookDylib.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		753BC7DA215CAA8400517BF9 /* NGAHook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NGAHook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		753BC7DD215CAA8400517BF9 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		753BC7DF215CAA8400517BF9 /* quick-resign.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = "quick-resign.sh"; path = "Scripts/quick-resign.sh"; sourceTree = "<group>"; };
+		753BC7E1215CAA8400517BF9 /* MDConfig.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = MDConfig.plist; path = Config/MDConfig.plist; sourceTree = "<group>"; };
+		753BC7E4215CAA8400517BF9 /* put ipa or app here */ = {isa = PBXFileReference; lastKnownFileType = text; name = "put ipa or app here"; path = "TargetApp/put ipa or app here"; sourceTree = "<group>"; };
+		753BC7E5215CAA8400517BF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		753BC7EB215CAA8400517BF9 /* libNGAHookDylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libNGAHookDylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		753BC7F0215CAA8500517BF9 /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		753BC7F2215CAA8500517BF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		753BC7F4215CAA8500517BF9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		753BC7F8215CAA8500517BF9 /* NGAHookDylib.xm */ = {isa = PBXFileReference; lastKnownFileType = text; name = NGAHookDylib.xm; path = Logos/NGAHookDylib.xm; sourceTree = "<group>"; };
+		753BC7F9215CAA8500517BF9 /* NGAHookDylib.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = NGAHookDylib.mm; path = Logos/NGAHookDylib.mm; sourceTree = "<group>"; };
+		753BC7FC215CAA8500517BF9 /* MDConfigManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDConfigManager.h; path = Config/MDConfigManager.h; sourceTree = "<group>"; };
+		753BC7FE215CAA8500517BF9 /* MDConfigManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDConfigManager.m; path = Config/MDConfigManager.m; sourceTree = "<group>"; };
+		753BC800215CAA8500517BF9 /* MDCycriptManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDCycriptManager.h; path = Config/MDCycriptManager.h; sourceTree = "<group>"; };
+		753BC802215CAA8500517BF9 /* MDCycriptManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDCycriptManager.m; path = Config/MDCycriptManager.m; sourceTree = "<group>"; };
+		753BC804215CAA8500517BF9 /* MDMethodTrace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MDMethodTrace.h; path = Config/MDMethodTrace.h; sourceTree = "<group>"; };
+		753BC806215CAA8500517BF9 /* MDMethodTrace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MDMethodTrace.m; path = Config/MDMethodTrace.m; sourceTree = "<group>"; };
+		753BC808215CAA8500517BF9 /* ANYMethodLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ANYMethodLog.h; path = Config/ANYMethodLog.h; sourceTree = "<group>"; };
+		753BC80A215CAA8500517BF9 /* ANYMethodLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ANYMethodLog.m; path = Config/ANYMethodLog.m; sourceTree = "<group>"; };
+		753BC80D215CAA8500517BF9 /* LLDBTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LLDBTools.h; path = Tools/LLDBTools.h; sourceTree = "<group>"; };
+		753BC80F215CAA8500517BF9 /* LLDBTools.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = LLDBTools.mm; path = Tools/LLDBTools.mm; sourceTree = "<group>"; };
+		753BC812215CAA8500517BF9 /* NGAHookDylib-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NGAHookDylib-Prefix.pch"; sourceTree = "<group>"; };
+		753BC814215CAA8500517BF9 /* AntiAntiDebug.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AntiAntiDebug.m; path = AntiAntiDebug/AntiAntiDebug.m; sourceTree = "<group>"; };
+		753BC817215CAA8500517BF9 /* fishhook.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = fishhook.c; path = fishhook/fishhook.c; sourceTree = "<group>"; };
+		753BC819215CAA8500517BF9 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
+		753BC81B215CAA8500517BF9 /* NGAHookDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGAHookDylib.h; sourceTree = "<group>"; };
+		753BC81D215CAA8500517BF9 /* NGAHookDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAHookDylib.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		753BC7D4215CAA8400517BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753BC7E8215CAA8400517BF9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753BC7F1215CAA8500517BF9 /* JavaScriptCore.framework in Frameworks */,
+				753BC7F5215CAA8500517BF9 /* UIKit.framework in Frameworks */,
+				753BC7F3215CAA8500517BF9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		753BC7CE215CAA8400517BF9 = {
+			isa = PBXGroup;
+			children = (
+				753BC7DC215CAA8400517BF9 /* NGAHook */,
+				753BC7F6215CAA8500517BF9 /* NGAHookDylib */,
+				753BC7EF215CAA8400517BF9 /* Frameworks */,
+				753BC7DB215CAA8400517BF9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		753BC7DB215CAA8400517BF9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7DA215CAA8400517BF9 /* NGAHook.app */,
+				753BC7EB215CAA8400517BF9 /* libNGAHookDylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		753BC7DC215CAA8400517BF9 /* NGAHook */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7DD215CAA8400517BF9 /* icon.png */,
+				753BC7E5215CAA8400517BF9 /* Info.plist */,
+				753BC7DE215CAA8400517BF9 /* Scripts */,
+				753BC7E0215CAA8400517BF9 /* Config */,
+				753BC7E3215CAA8400517BF9 /* TargetApp */,
+			);
+			path = NGAHook;
+			sourceTree = "<group>";
+		};
+		753BC7DE215CAA8400517BF9 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7DF215CAA8400517BF9 /* quick-resign.sh */,
+			);
+			name = Scripts;
+			sourceTree = "<group>";
+		};
+		753BC7E0215CAA8400517BF9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7E1215CAA8400517BF9 /* MDConfig.plist */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		753BC7E3215CAA8400517BF9 /* TargetApp */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7E4215CAA8400517BF9 /* put ipa or app here */,
+			);
+			name = TargetApp;
+			sourceTree = "<group>";
+		};
+		753BC7EF215CAA8400517BF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7F0215CAA8500517BF9 /* JavaScriptCore.framework */,
+				753BC7F2215CAA8500517BF9 /* Foundation.framework */,
+				753BC7F4215CAA8500517BF9 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		753BC7F6215CAA8500517BF9 /* NGAHookDylib */ = {
+			isa = PBXGroup;
+			children = (
+				753BC81B215CAA8500517BF9 /* NGAHookDylib.h */,
+				753BC81D215CAA8500517BF9 /* NGAHookDylib.m */,
+				753BC7F7215CAA8500517BF9 /* Logos */,
+				753BC7FB215CAA8500517BF9 /* Config */,
+				753BC80C215CAA8500517BF9 /* Tools */,
+				753BC813215CAA8500517BF9 /* AntiAntiDebug */,
+				753BC816215CAA8500517BF9 /* fishhook */,
+				753BC811215CAA8500517BF9 /* Supporting Files */,
+			);
+			path = NGAHookDylib;
+			sourceTree = "<group>";
+		};
+		753BC7F7215CAA8500517BF9 /* Logos */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7F8215CAA8500517BF9 /* NGAHookDylib.xm */,
+				753BC7F9215CAA8500517BF9 /* NGAHookDylib.mm */,
+			);
+			name = Logos;
+			sourceTree = "<group>";
+		};
+		753BC7FB215CAA8500517BF9 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				753BC7FC215CAA8500517BF9 /* MDConfigManager.h */,
+				753BC7FE215CAA8500517BF9 /* MDConfigManager.m */,
+				753BC800215CAA8500517BF9 /* MDCycriptManager.h */,
+				753BC802215CAA8500517BF9 /* MDCycriptManager.m */,
+				753BC804215CAA8500517BF9 /* MDMethodTrace.h */,
+				753BC806215CAA8500517BF9 /* MDMethodTrace.m */,
+				753BC808215CAA8500517BF9 /* ANYMethodLog.h */,
+				753BC80A215CAA8500517BF9 /* ANYMethodLog.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		753BC80C215CAA8500517BF9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				753BC80D215CAA8500517BF9 /* LLDBTools.h */,
+				753BC80F215CAA8500517BF9 /* LLDBTools.mm */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		753BC811215CAA8500517BF9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				753BC812215CAA8500517BF9 /* NGAHookDylib-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		753BC813215CAA8500517BF9 /* AntiAntiDebug */ = {
+			isa = PBXGroup;
+			children = (
+				753BC814215CAA8500517BF9 /* AntiAntiDebug.m */,
+			);
+			name = AntiAntiDebug;
+			sourceTree = "<group>";
+		};
+		753BC816215CAA8500517BF9 /* fishhook */ = {
+			isa = PBXGroup;
+			children = (
+				753BC817215CAA8500517BF9 /* fishhook.c */,
+				753BC819215CAA8500517BF9 /* fishhook.h */,
+			);
+			name = fishhook;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		753BC7E9215CAA8400517BF9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753BC81C215CAA8500517BF9 /* NGAHookDylib.h in Headers */,
+				753BC801215CAA8500517BF9 /* MDCycriptManager.h in Headers */,
+				753BC805215CAA8500517BF9 /* MDMethodTrace.h in Headers */,
+				753BC80E215CAA8500517BF9 /* LLDBTools.h in Headers */,
+				753BC7FD215CAA8500517BF9 /* MDConfigManager.h in Headers */,
+				753BC809215CAA8500517BF9 /* ANYMethodLog.h in Headers */,
+				753BC81A215CAA8500517BF9 /* fishhook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		753BC7D9215CAA8400517BF9 /* NGAHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753BC824215CAA8500517BF9 /* Build configuration list for PBXNativeTarget "NGAHook" */;
+			buildPhases = (
+				753BC7D3215CAA8400517BF9 /* Sources */,
+				753BC7D4215CAA8400517BF9 /* Frameworks */,
+				753BC7D5215CAA8400517BF9 /* ShellScript */,
+				753BC7D6215CAA8400517BF9 /* Resources */,
+				753BC7D7215CAA8400517BF9 /* CopyFiles */,
+				753BC7D8215CAA8400517BF9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				753BC7EE215CAA8400517BF9 /* PBXTargetDependency */,
+			);
+			name = NGAHook;
+			productName = NGAHook;
+			productReference = 753BC7DA215CAA8400517BF9 /* NGAHook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		753BC7EA215CAA8400517BF9 /* NGAHookDylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 753BC821215CAA8500517BF9 /* Build configuration list for PBXNativeTarget "NGAHookDylib" */;
+			buildPhases = (
+				753BC7E6215CAA8400517BF9 /* ShellScript */,
+				753BC7E7215CAA8400517BF9 /* Sources */,
+				753BC7E8215CAA8400517BF9 /* Frameworks */,
+				753BC7E9215CAA8400517BF9 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NGAHookDylib;
+			productName = NGAHookDylib;
+			productReference = 753BC7EB215CAA8400517BF9 /* libNGAHookDylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		753BC7CF215CAA8400517BF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = wzq;
+				TargetAttributes = {
+					753BC7D9215CAA8400517BF9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+					753BC7EA215CAA8400517BF9 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 753BC7D2215CAA8400517BF9 /* Build configuration list for PBXProject "NGAHook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 753BC7CE215CAA8400517BF9;
+			productRefGroup = 753BC7DB215CAA8400517BF9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				753BC7D9215CAA8400517BF9 /* NGAHook */,
+				753BC7EA215CAA8400517BF9 /* NGAHookDylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		753BC7D6215CAA8400517BF9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753BC7E2215CAA8400517BF9 /* MDConfig.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		753BC7D5215CAA8400517BF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = /opt/MonkeyDev/Tools/pack.sh;
+		};
+		753BC7D8215CAA8400517BF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/Tools/pack.sh codesign";
+		};
+		753BC7E6215CAA8400517BF9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/MonkeyDev/bin/md --xcbp-logos";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		753BC7D3215CAA8400517BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		753BC7E7215CAA8400517BF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				753BC81E215CAA8500517BF9 /* NGAHookDylib.m in Sources */,
+				753BC803215CAA8500517BF9 /* MDCycriptManager.m in Sources */,
+				753BC80B215CAA8500517BF9 /* ANYMethodLog.m in Sources */,
+				753BC7FF215CAA8500517BF9 /* MDConfigManager.m in Sources */,
+				753BC810215CAA8500517BF9 /* LLDBTools.mm in Sources */,
+				753BC7FA215CAA8500517BF9 /* NGAHookDylib.mm in Sources */,
+				753BC807215CAA8500517BF9 /* MDMethodTrace.m in Sources */,
+				753BC818215CAA8500517BF9 /* fishhook.c in Sources */,
+				753BC815215CAA8500517BF9 /* AntiAntiDebug.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		753BC7EE215CAA8400517BF9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 753BC7EA215CAA8400517BF9 /* NGAHookDylib */;
+			targetProxy = 753BC7ED215CAA8400517BF9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		753BC81F215CAA8500517BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		753BC820215CAA8500517BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		753BC822215CAA8500517BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y7X2393Y7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NGAHookDylib/NGAHookDylib-Prefix.pch";
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libNGAHookDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"NGAHookDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+					"-lcycript",
+					"-framework",
+					RevealServer,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = Debug;
+		};
+		753BC823215CAA8500517BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = 4Y7X2393Y7;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				EXECUTABLE_PREFIX = lib;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks/**",
+					"$(MonkeyDevPath)/Librarys/**",
+					"$(MonkeyDevTheosPath)/vendor/lib",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NGAHookDylib/NGAHookDylib-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/include",
+					"$(MonkeyDevTheosPath)/vendor/include/**",
+				);
+				INSTALL_PATH = "@executable_path/Frameworks/libNGAHookDylib.dylib";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(MonkeyDevPath)/Frameworks",
+					"$(MonkeyDevTheosPath)/vendor/lib/**",
+				);
+				MonkeyDevPath = /opt/MonkeyDev;
+				MonkeyDevTheosPath = /opt/theos;
+				OTHER_CFLAGS = (
+					"$(inherited)",
+					"-DTHEOS_INSTANCE_NAME=\"\\\"NGAHookDylib\\\"\"",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-weak_library",
+					"/usr/lib/libc++.dylib",
+					"-weak_library",
+					"/usr/lib/libstdc++.dylib",
+					"-weak_library",
+					"$(MonkeyDevPath)/Frameworks/libsubstrate.dylib",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		753BC825215CAA8500517BF9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y7X2393Y7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = NGAHook/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = wang.inferior..NGAHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		753BC826215CAA8500517BF9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y7X2393Y7;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = NGAHook/Info.plist;
+				MONKEYDEV_ADD_SUBSTRATE = YES;
+				MONKEYDEV_CLASS_DUMP = NO;
+				MONKEYDEV_DEFAULT_BUNDLEID = NO;
+				MONKEYDEV_INSERT_DYLIB = YES;
+				MONKEYDEV_RESTORE_SYMBOL = NO;
+				MONKEYDEV_TARGET_APP = Optional;
+				PODS_CONFIGURATION_BUILD_DIR = "$BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_BUNDLE_IDENTIFIER = wang.inferior..NGAHook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		753BC7D2215CAA8400517BF9 /* Build configuration list for PBXProject "NGAHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753BC81F215CAA8500517BF9 /* Debug */,
+				753BC820215CAA8500517BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753BC821215CAA8500517BF9 /* Build configuration list for PBXNativeTarget "NGAHookDylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753BC822215CAA8500517BF9 /* Debug */,
+				753BC823215CAA8500517BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		753BC824215CAA8500517BF9 /* Build configuration list for PBXNativeTarget "NGAHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				753BC825215CAA8500517BF9 /* Debug */,
+				753BC826215CAA8500517BF9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 753BC7CF215CAA8400517BF9 /* Project object */;
+}
