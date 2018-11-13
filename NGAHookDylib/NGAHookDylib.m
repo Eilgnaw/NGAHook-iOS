@@ -28,13 +28,21 @@ CHMethod0(id, NGALaunchManager, showLaunchAD){
 CHMethod0(id, NGALaunchManager, EnterForegroundShowAD){
     return NULL;
 }
+CHMethod0(id, NGALaunchManager, doNewsAdvertisingRegist){
+    return NULL;
+}
+CHMethod0(id, NGALaunchManager, loadDonewsFullScreenAdvertising){
+    return NULL;
+}
 
 CHConstructor{
     
     CHLoadLateClass(NGALaunchManager);
     CHHook0(NGALaunchManager, showLaunchAD);
     CHHook0(NGALaunchManager, EnterForegroundShowAD);
-    
+    CHHook0(NGALaunchManager, doNewsAdvertisingRegist);
+    CHHook0(NGALaunchManager, loadDonewsFullScreenAdvertising);
+
 
     CHLoadLateClass(HomePageViewController);
     CHHook0(HomePageViewController, viewDidLoad);

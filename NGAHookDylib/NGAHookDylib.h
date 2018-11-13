@@ -15,5 +15,6 @@
 @interface CustomViewController
 - (void)showLaunchAD;
 - (void)EnterForegroundShowAD;
-
+- (void)doNewsAdvertisingRegist;
+- (void)loadDonewsFullScreenAdvertising;
 @end
