@@ -18,8 +18,7 @@ CHDeclareClass(HomePageViewController)
 CHOptimizedMethod0(self, void, HomePageViewController, viewDidLoad){
     CHSuper0(HomePageViewController, viewDidLoad);
     UIViewController *VC = (UIViewController*) self;
-    [VC.tabBarController setSelectedIndex:3];
-    
+    [VC.tabBarController setSelectedIndex:VC.tabBarController.viewControllers.count-1];
 }
 
 CHDeclareClass(NGALaunchManager)
@@ -31,6 +30,7 @@ CHMethod0(id, NGALaunchManager, EnterForegroundShowAD){
 }
 
 CHConstructor{
+    
     CHLoadLateClass(NGALaunchManager);
     CHHook0(NGALaunchManager, showLaunchAD);
     CHHook0(NGALaunchManager, EnterForegroundShowAD);

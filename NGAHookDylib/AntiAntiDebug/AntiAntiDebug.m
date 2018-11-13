@@ -104,5 +104,7 @@ __attribute__((constructor)) static void entry(){
     // rebind_symbols((struct rebinding[1]){{"sysctl", my_sysctl, (void*)&orig_sysctl}},1);
     
     rebind_symbols((struct rebinding[1]){{"syscall", my_syscall, (void*)&orig_syscall}},1);
+    
+    
 }
 
