@@ -14,9 +14,9 @@
 #import <Cycript/Cycript.h>
 #import <MDCycriptManager.h>
 
-CHDeclareClass(HomePageViewController)
-CHOptimizedMethod0(self, void, HomePageViewController, viewDidLoad){
-    CHSuper0(HomePageViewController, viewDidLoad);
+CHDeclareClass(HomeIndexViewController)
+CHOptimizedMethod0(self, void, HomeIndexViewController, viewDidLoad){
+    CHSuper0(HomeIndexViewController, viewDidLoad);
     UIViewController *VC = (UIViewController*) self;
     [VC.tabBarController setSelectedIndex:VC.tabBarController.viewControllers.count-1];
 }
@@ -44,7 +44,7 @@ CHConstructor{
     CHHook0(NGALaunchManager, loadDonewsFullScreenAdvertising);
 
 
-    CHLoadLateClass(HomePageViewController);
-    CHHook0(HomePageViewController, viewDidLoad);
+    CHLoadLateClass(HomeIndexViewController);
+    CHHook0(HomeIndexViewController, viewDidLoad);
     
 }

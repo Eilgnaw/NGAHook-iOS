@@ -28,6 +28,7 @@
 		753BC81A215CAA8500517BF9 /* fishhook.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC819215CAA8500517BF9 /* fishhook.h */; };
 		753BC81C215CAA8500517BF9 /* NGAHookDylib.h in Headers */ = {isa = PBXBuildFile; fileRef = 753BC81B215CAA8500517BF9 /* NGAHookDylib.h */; };
 		753BC81E215CAA8500517BF9 /* NGAHookDylib.m in Sources */ = {isa = PBXBuildFile; fileRef = 753BC81D215CAA8500517BF9 /* NGAHookDylib.m */; };
+		756A351A236430ED009C4586 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 756A3519236430ED009C4586 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +83,7 @@
 		753BC819215CAA8500517BF9 /* fishhook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = fishhook.h; path = fishhook/fishhook.h; sourceTree = "<group>"; };
 		753BC81B215CAA8500517BF9 /* NGAHookDylib.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGAHookDylib.h; sourceTree = "<group>"; };
 		753BC81D215CAA8500517BF9 /* NGAHookDylib.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NGAHookDylib.m; sourceTree = "<group>"; };
+		756A3519236430ED009C4586 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				753BC7DE215CAA8400517BF9 /* Scripts */,
 				753BC7E0215CAA8400517BF9 /* Config */,
 				753BC7E3215CAA8400517BF9 /* TargetApp */,
+				756A3519236430ED009C4586 /* Launch Screen.storyboard */,
 			);
 			path = NGAHook;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				756A351A236430ED009C4586 /* Launch Screen.storyboard in Resources */,
 				753BC7E2215CAA8400517BF9 /* MDConfig.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -671,9 +675,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RY86XP64D4;
+				DEVELOPMENT_TEAM = DNTEV65YEZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NGAHook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_DEFAULT_BUNDLEID = YES;
@@ -692,9 +697,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = RY86XP64D4;
+				DEVELOPMENT_TEAM = DNTEV65YEZ;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = NGAHook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MONKEYDEV_ADD_SUBSTRATE = YES;
 				MONKEYDEV_CLASS_DUMP = NO;
 				MONKEYDEV_DEFAULT_BUNDLEID = YES;
